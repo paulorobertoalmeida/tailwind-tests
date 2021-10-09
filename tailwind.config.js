@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       'sm': '640px',
@@ -25,7 +25,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      textOpacity: ['dark']
+    }
   },
   plugins: [],
 }

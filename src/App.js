@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import TailWindCSSButton from "./GlobalComponents";
+import {TailWindCSSButton, DarkModeButton} from "./GlobalComponents";
 
 function App() {
   return (
@@ -13,13 +13,7 @@ function App() {
         </div>
         
       </div>
-      <div className="py-2 px-4 bg-white dark:bg-gray-800">
-          <h1 className="text-gray-900 dark:text-white">Dark mode is here!</h1>
-          <p className="text-gray-600 dark:text-gray-300">Lorem ipsum...</p>
-          <button className="bg-blue-500 text-white font-medium px-4 py-2 rounded hover:bg-blue-600">
-              hello
-          </button>
-        </div>
+        <DarkModeButton />
     </div>
     
   );
